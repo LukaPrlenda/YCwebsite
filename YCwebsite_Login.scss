@@ -1,0 +1,97 @@
+*{
+    font-family: century, Times, serif;
+}
+
+.title{
+    color: navy;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.undertitle{
+    color: burlywood;
+    text-align: center;
+    font-family: century, Times, serif;
+}
+
+.navi{
+    background-color: navy;  
+    display: flex;
+    width: 100%; 
+
+    button{
+        flex: 1;
+
+        color: burlywood;
+        text-align: center;
+        font-family: century, Times, serif;
+        font-weight: 600;
+
+        background-color: navy;
+        border: none;
+        cursor: pointer;
+        transition: background-color 0,5s;
+        transition: color 0.5s;
+    }
+
+    button:hover{
+        
+        color: navy;
+
+        background-color:  burlywood;
+    }
+    button:active{
+
+        color: royalblue;
+
+        background-color: rgb(214, 167, 105);
+    }
+}
+    
+.img_marex440{
+    width: 100%;
+    height: auto;
+}
+
+.yacht_h3{
+    color: burlywood;
+    font-family: century, Times, serif;
+    font-weight: 600;
+    font-size: 2em;
+}
+
+.section_line{
+    color: navy;
+}
+
+.title2{
+    text-align: center;
+    color: navy;
+    font-family: century, Times, serif;
+    font-weight: 600;
+    font-size: 3em;
+}
+
+.login_signup_buttons{
+    display: flex;
+    justify-content: center;
+
+    button{
+        color: burlywood;
+        font-size: large;
+        font-weight: 600;
+
+        background-color: navy;
+        margin-right: 7%;
+        margin-left: 7%;
+        border: none;
+        width: 20%;
+        height: 35px
+    }
+}
+
+
+.yt_1_marex440{
+    display: flex;
+    width: 100%;
+}
