@@ -195,7 +195,7 @@
         border: none;
         cursor: pointer;
         transition: background-color 0.25s;
-        transition: color 0.25
+        transition: color 0.25;
     }
     a:hover{
         color: burlywood;
@@ -234,5 +234,110 @@
 
     #designer_name{
         font-size: 150%;
+    }
+}
+
+.navi_2{
+    display: flex;
+    width: 100%;
+
+    .login_navi_button_left{
+        flex: 1;
+
+        color: navy;
+        text-align: center;
+        align-content: center;
+        text-decoration: none;
+        font-weight: 600;
+
+        background-color: burlywood;
+        height: 40px;
+        border: none;
+        margin-top: auto;
+        margin-bottom: auto;
+        margin-right: 40%;
+        align-items: center;
+        cursor: pointer;
+        transition: background-color 0.25s;
+        transition: color 0.25;
+    }
+    .login_navi_button_left:hover{
+        color: burlywood;
+
+        background-color: navy;
+    }
+
+    .login_navi_button_left:active{
+        color: beige;
+
+        background-color: rgb(5, 5, 100);
+    }
+
+    .signup_navi_button_left{
+        flex: 1;
+
+        color: navy;
+        text-align: center;
+        align-content: center;
+        text-decoration: none;
+        font-weight: 600;
+
+        background-color: burlywood;
+        height: 40px;
+        border: none;
+        margin-top: auto;
+        margin-bottom: auto;
+        margin-right: 44.6%;
+        align-items: center;
+        cursor: pointer;
+        transition: background-color 0.25s;
+        transition: color 0.25;
+    }
+    .signup_navi_button_left:hover{
+        color: burlywood;
+
+        background-color: navy;
+    }
+
+    .signup_navi_button_left:active{
+        color: beige;
+
+        background-color: rgb(5, 5, 100);
+    }
+
+    p{
+        color: navy;
+        font-weight: 600;
+        font-size: larger;
+    }
+
+    .navi_button_right{
+        flex: 1;
+        color: navy;
+        text-align: center;
+        align-content: center;
+        text-decoration: none;
+        font-weight: 600;
+
+        background-color: burlywood;
+        border: none;
+        height: 40px;
+        margin-top: auto;
+        margin-bottom: auto;
+        margin-left: 1%;
+        cursor: pointer;
+        transition: background-color 0.25s;
+        transition: color 0.25;
+    }
+    .navi_button_right:hover{
+        color: burlywood;
+
+        background-color: navy;
+    }
+
+    .navi_button_right:active{
+        color: beige;
+
+        background-color: rgb(5, 5, 100);
     }
 }
