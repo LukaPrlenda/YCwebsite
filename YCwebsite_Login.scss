@@ -174,6 +174,72 @@
     }
 }
 
+.title2_2{
+    color: navy;
+    font-size: 3em;
+    font-weight: 600;
+
+    padding-left: 5%;
+}
+
+.title3{
+    color: navy;
+    font-size: 2em;
+    font-weight: 600;
+}
+
+.title3_italy{
+    text-align: end;
+    color: navy;
+    font-size: 2em;
+    font-weight: 600;
+}
+
+.location_list{
+    color: burlywood;
+    font-size: 1.5em;
+    font-weight: 400;
+}
+
+.location_list_italy{
+    direction: rtl;
+    color: burlywood;
+    font-size: 1.5em;
+    font-weight: 400;
+}
+
+.img_krk_punat{
+    margin-left: auto;
+    margin-right: 12.5%;
+    width: 45%;
+    height: auto;
+
+}
+
+.img_sicily{
+    margin-right: auto;
+    margin-left: 12.5%;
+}
+
+.list_krk_punat{
+    display: flex;
+}
+
+.list_sicily{
+    display: flex;
+}
+
+@media (max-width: 850px){
+    .img_krk_punat{
+        display: none;
+    }
+    
+    .img_sicily{
+        width: 0%;
+        margin-left: auto;
+    }
+}
+
 .yt_1_marex440
 {
     display: flex;
@@ -208,6 +274,39 @@
 
         background-color: rgb(5, 5, 100);
     }
+}
+
+@media (max-width: 700px) {
+    .aside_button_right{
+        display: flex;
+        justify-content: end;
+    
+        a{
+            color: navy;
+            text-align: center;
+            text-decoration: none;
+            font-size: small;
+            font-weight: 400;
+    
+            background-color: burlywood;
+            width: 17%;
+            border: none;
+            cursor: pointer;
+            transition: background-color 0.25s;
+            transition: color 0.25;
+        }
+        a:hover{
+            color: burlywood;
+    
+            background-color: navy;
+        }
+    
+        a:active{
+            color: beige;
+    
+            background-color: rgb(5, 5, 100);
+        }
+    }    
 }
 
 .footer_about_us{
@@ -339,5 +438,154 @@
         color: beige;
 
         background-color: rgb(5, 5, 100);
+    }
+}
+
+@media (max-width: 700px) {
+    .navi_2{
+        display: flex;
+        width: 100%;
+    
+        .login_navi_button_left{
+            flex: 1;
+    
+            color: navy;
+            text-align: center;
+            align-content: center;
+            text-decoration: none;
+            font-size: small;
+            font-weight: 600;
+    
+            background-color: burlywood;
+            height: 40px;
+            border: none;
+            margin-top: auto;
+            margin-bottom: auto;
+            margin-right: 10%;
+            align-items: center;
+            cursor: pointer;
+            transition: background-color 0.25s;
+            transition: color 0.25;
+        }
+        .login_navi_button_left:hover{
+            color: burlywood;
+    
+            background-color: navy;
+        }
+    
+        .login_navi_button_left:active{
+            color: beige;
+    
+            background-color: rgb(5, 5, 100);
+        }
+    
+        .signup_navi_button_left{
+            flex: 1;
+    
+            color: navy;
+            text-align: center;
+            align-content: center;
+            text-decoration: none;
+            font-size: small;
+            font-weight: 600;
+    
+            background-color: burlywood;
+            height: 40px;
+            border: none;
+            margin-top: auto;
+            margin-bottom: auto;
+            margin-right: 23.5%;
+            align-items: center;
+            cursor: pointer;
+            transition: background-color 0.25s;
+            transition: color 0.25;
+        }
+        .signup_navi_button_left:hover{
+            color: burlywood;
+    
+            background-color: navy;
+        }
+    
+        .signup_navi_button_left:active{
+            color: beige;
+    
+            background-color: rgb(5, 5, 100);
+        }
+    
+        p{
+            color: navy;
+            font-weight: 600;
+            font-size: medium;
+        }
+    
+        .navi_button_right{
+            flex: 1;
+            color: navy;
+            text-align: center;
+            align-content: center;
+            text-decoration: none;
+            font-size: small;
+            font-weight: 600;
+    
+            background-color: burlywood;
+            border: none;
+            height: 40px;
+            margin-top: auto;
+            margin-bottom: auto;
+            margin-left: 1%;
+            cursor: pointer;
+            transition: background-color 0.25s;
+            transition: color 0.25;
+        }
+        .navi_button_right:hover{
+            color: burlywood;
+    
+            background-color: navy;
+        }
+    
+        .navi_button_right:active{
+            color: beige;
+    
+            background-color: rgb(5, 5, 100);
+        }
+    } 
+}
+
+#signup_h4{
+    text-align: center;
+    color: navy;
+    font-weight: 600;
+}
+#signup_p_h4{
+    text-align: center;
+    color: black;
+    font-weight: 400;
+}
+
+#carousel{
+    display: flex;
+    width: 100%;
+
+    img{
+        flex: 1;
+    }
+}
+
+#captain_cards{
+    h4{
+        color: navy;
+        font-weight: 600;
+    }
+    p{
+        color: black;
+        font-family: century, Times, serif;
+    }
+
+    @media (max-width: 700px){
+        p{
+            color: black;
+            font-family: century, Times, serif;
+            font-size: small;
+        }
     }
 }

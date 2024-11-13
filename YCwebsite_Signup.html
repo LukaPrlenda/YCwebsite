@@ -18,14 +18,14 @@
         <p>If you have an account</p>
         <a class="navi_button_right" href="YCwebsite_Login.html">Log in</a>
     </nav>
-    <section style="text-align: center;">
-
+    <br><br><br>
+    <section class="row">
         <br><br><br>
-
-        <h4>Making Your Account</h4>
-        <p>Please enter your information:</p>
-
-        <form action="https://jsonplaceholder.typicode.com/" method="POST" class="form-group was-validated" novalidate>
+        <h4 id="signup_h4">Making Your Account</h4>
+        <p id="signup_p_h4">Please enter your information:</p>
+        <p></p>
+        <div class="col-1 col-sm-1 col-md-4 col-lg-4 col-xl-4 col-xxl-4"></div>
+        <form action="https://jsonplaceholder.typicode.com/" method="POST" class="form-group was-validated col-10 col-sm-10 col-md-4 col-lg-4 col-xl-4 col-xxl-4" novalidate>
             <label for="name">Name</label>
             <input type="text" id="name" name="User's name" class="form-control" required>
             <div class="invalid-feedback">Please enter your name</div>
@@ -73,10 +73,15 @@
             <input type="password" id="password" name="password" class="form-control" required>
             <div class="invalid-feedback">Please enter your password</div>
             <br>
-            <input type="submit" value="Submit" style="color: darkcyan;">
+            <input type="submit" value="Submit" class="btn btn-primary">
             <br><br>
-
         </form>
     </section>
+    <br><br><br><br><br><br><br>
+    <footer class="footer_about_us">
+        <br><br>
+        <hr>
+        <br><br><br><br>
+    </footer>
 </body>
 </html>
