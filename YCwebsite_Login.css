@@ -208,9 +208,83 @@
     margin-left: auto;
   }
 }
-.yt_1_marex440 {
-  display: flex;
+.yachts h3 {
+  color: burlywood;
+  font-size: 5em;
+  font-weight: 600;
+}
+@media (max-width: 700px) {
+  .yachts h3 {
+    font-size: 2.7em;
+  }
+}
+.yachts p {
+  color: navy;
+  font-size: x-large;
+  font-weight: 100;
+}
+.yachts a {
+  color: navy;
+  font-size: large;
+  font-weight: 100;
+}
+.yachts a:hover {
+  color: rgb(122, 122, 177);
+}
+.yachts a:visited {
+  color: royalblue;
+}
+.yachts #hr_2 {
+  color: burlywood;
+}
+.yachts .yt_section1_marex440 {
+  position: relative;
   width: 100%;
+  height: 0;
+  padding-bottom: 56.26%;
+}
+.yachts .yt_section2_marex440 {
+  position: relative;
+  width: 100%;
+  height: 0;
+  padding-bottom: 52.74%;
+}
+.yachts .yt_section3_marex440 {
+  position: relative;
+  width: 100%;
+  height: 0;
+  padding-bottom: 56.26%;
+}
+.yachts .yt_1_marex440 {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+.yachts #charter_button {
+  color: burlywood;
+  text-align: center;
+  text-decoration: none;
+  font-size: xx-large;
+  font-weight: 600;
+  background-color: navy;
+  margin-left: 1%;
+  border: none;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 8px;
+  padding-right: 8px;
+  cursor: pointer;
+  transition: background-color 0, 25s;
+  transition: color 0.25s;
+}
+.yachts #charter_button:hover {
+  color: navy;
+  background-color: burlywood;
+}
+.yachts #charter_button:active {
+  color: royalblue;
+  background-color: rgb(214, 167, 105);
 }
 
 .aside_button_right {
@@ -282,6 +356,15 @@
 }
 .footer_about_us p {
   color: white;
+}
+.footer_about_us a {
+  color: white;
+}
+.footer_about_us a:hover {
+  color: rgb(122, 122, 177);
+}
+.footer_about_us a:visited {
+  color: royalblue;
 }
 .footer_about_us #designer_name {
   font-size: 150%;
@@ -483,6 +566,42 @@
 }
 #carousel img {
   flex: 1;
+}
+
+.how_button {
+  color: navy;
+  text-align: center;
+  text-decoration: none;
+  font-size: x-large;
+  font-weight: 600;
+  background-color: burlywood;
+  margin-left: 1%;
+  border: none;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 8px;
+  padding-right: 8px;
+  cursor: pointer;
+  transition: background-color 0, 25s;
+  transition: color 0.25s;
+}
+
+.how_button:hover {
+  color: burlywood;
+  background-color: navy;
+}
+
+.how_button:active {
+  color: beige;
+  background-color: rgb(5, 5, 100);
+}
+
+.text_modal h3 {
+  color: navy;
+  font-weight: 600;
+}
+.text_modal p {
+  color: burlywood;
 }
 
 #captain_cards h4 {
