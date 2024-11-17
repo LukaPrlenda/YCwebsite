@@ -1,0 +1,621 @@
+* {
+  font-family: century, Times, serif;
+}
+
+.title {
+  color: navy;
+  text-align: center;
+  font-family: "Times New Roman", Times, serif;
+}
+
+.undertitle {
+  color: burlywood;
+  text-align: center;
+  font-family: century, Times, serif;
+}
+
+@media (max-width: 700px) {
+  .navi {
+    background-color: navy;
+    display: flex;
+    width: 100%;
+  }
+  .navi a {
+    flex: 1;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    font-family: century, Times, serif;
+    font-size: xx-small;
+    font-weight: 300;
+    background-color: navy;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.5s;
+    transition: color 0.5s;
+  }
+}
+.navi {
+  background-color: navy;
+  display: flex;
+  width: 100%;
+}
+.navi a {
+  flex: 1;
+  color: burlywood;
+  text-decoration: none;
+  text-align: center;
+  font-family: century, Times, serif;
+  font-size: large;
+  font-weight: 600;
+  background-color: navy;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.5s;
+  transition: color 0.5s;
+}
+.navi a:hover {
+  color: navy;
+  background-color: burlywood;
+}
+.navi a:active {
+  color: royalblue;
+  background-color: rgb(214, 167, 105);
+}
+
+.img_marex440 {
+  width: 100%;
+  height: auto;
+}
+
+.yacht_h3 {
+  color: burlywood;
+  font-family: century, Times, serif;
+  font-weight: 600;
+  font-size: 2em;
+}
+
+.section_line {
+  color: navy;
+}
+
+.title2 {
+  text-align: center;
+  color: navy;
+  font-family: century, Times, serif;
+  font-weight: 600;
+  font-size: 3em;
+}
+
+@media (max-width: 700px) {
+  .login_signup_buttons {
+    display: flex;
+    width: 100%;
+  }
+  .login_signup_buttons a {
+    flex: 1;
+    color: burlywood;
+    text-align: center;
+    text-decoration: none;
+    font-size: small;
+    font-weight: 300;
+    background-color: navy;
+    margin-right: 7%;
+    margin-left: 7%;
+    border: none;
+    padding: 1px;
+    cursor: pointer;
+    transition: background-color 0, 25s;
+    transition: color 0.25s;
+  }
+  .login_signup_buttons a:hover {
+    color: navy;
+    background-color: burlywood;
+  }
+  .login_signup_buttons a:active {
+    color: royalblue;
+    background-color: rgb(214, 167, 105);
+  }
+}
+.login_signup_buttons {
+  display: flex;
+  width: 100%;
+}
+.login_signup_buttons a {
+  flex: 1;
+  color: burlywood;
+  text-align: center;
+  text-decoration: none;
+  font-size: x-large;
+  font-weight: 600;
+  background-color: navy;
+  margin-right: 9%;
+  margin-left: 9%;
+  border: none;
+  padding: 2px;
+  cursor: pointer;
+  transition: background-color 0, 25s;
+  transition: color 0.25s;
+}
+.login_signup_buttons a:hover {
+  color: navy;
+  background-color: burlywood;
+}
+.login_signup_buttons a:active {
+  color: royalblue;
+  background-color: rgb(214, 167, 105);
+}
+
+.title2_2 {
+  color: navy;
+  font-size: 3em;
+  font-weight: 600;
+  padding-left: 5%;
+}
+
+.title3 {
+  color: navy;
+  font-size: 2em;
+  font-weight: 600;
+}
+
+.title3_italy {
+  text-align: end;
+  color: navy;
+  font-size: 2em;
+  font-weight: 600;
+}
+
+.location_list {
+  color: burlywood;
+  font-size: 1.5em;
+  font-weight: 400;
+}
+
+.location_list_italy {
+  direction: rtl;
+  color: burlywood;
+  font-size: 1.5em;
+  font-weight: 400;
+}
+
+.img_krk_punat {
+  margin-left: auto;
+  margin-right: 12.5%;
+  width: 45%;
+  height: auto;
+}
+
+.img_sicily {
+  margin-right: auto;
+  margin-left: 12.5%;
+}
+
+.list_krk_punat {
+  display: flex;
+}
+
+.list_sicily {
+  display: flex;
+}
+
+@media (max-width: 850px) {
+  .img_krk_punat {
+    display: none;
+  }
+  .img_sicily {
+    width: 0%;
+    margin-left: auto;
+  }
+}
+.yachts h3 {
+  color: burlywood;
+  font-size: 5em;
+  font-weight: 600;
+}
+@media (max-width: 700px) {
+  .yachts h3 {
+    font-size: 2.7em;
+  }
+}
+.yachts p {
+  color: navy;
+  font-size: x-large;
+  font-weight: 100;
+}
+.yachts a {
+  color: navy;
+  font-size: large;
+  font-weight: 100;
+}
+.yachts a:hover {
+  color: rgb(122, 122, 177);
+}
+.yachts a:visited {
+  color: royalblue;
+}
+.yachts #hr_2 {
+  color: burlywood;
+}
+.yachts .yt_section1_marex440 {
+  position: relative;
+  width: 100%;
+  height: 0;
+  padding-bottom: 56.26%;
+}
+.yachts .yt_section2_marex440 {
+  position: relative;
+  width: 100%;
+  height: 0;
+  padding-bottom: 52.74%;
+}
+.yachts .yt_section3_marex440 {
+  position: relative;
+  width: 100%;
+  height: 0;
+  padding-bottom: 56.26%;
+}
+.yachts .yt_1_marex440 {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+.yachts #charter_button {
+  color: burlywood;
+  text-align: center;
+  text-decoration: none;
+  font-size: xx-large;
+  font-weight: 600;
+  background-color: navy;
+  margin-left: 1%;
+  border: none;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 8px;
+  padding-right: 8px;
+  cursor: pointer;
+  transition: background-color 0, 25s;
+  transition: color 0.25s;
+}
+.yachts #charter_button:hover {
+  color: navy;
+  background-color: burlywood;
+}
+.yachts #charter_button:active {
+  color: royalblue;
+  background-color: rgb(214, 167, 105);
+}
+
+.aside_button_right {
+  display: flex;
+  justify-content: end;
+}
+.aside_button_right a {
+  color: navy;
+  text-align: center;
+  text-decoration: none;
+  font-weight: 400;
+  background-color: burlywood;
+  width: 10%;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.25s;
+  transition: color 0.25;
+}
+.aside_button_right a:hover {
+  color: burlywood;
+  background-color: navy;
+}
+.aside_button_right a:active {
+  color: beige;
+  background-color: rgb(5, 5, 100);
+}
+
+@media (max-width: 700px) {
+  .aside_button_right {
+    display: flex;
+    justify-content: end;
+  }
+  .aside_button_right a {
+    color: navy;
+    text-align: center;
+    text-decoration: none;
+    font-size: small;
+    font-weight: 400;
+    background-color: burlywood;
+    width: 17%;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.25s;
+    transition: color 0.25;
+  }
+  .aside_button_right a:hover {
+    color: burlywood;
+    background-color: navy;
+  }
+  .aside_button_right a:active {
+    color: beige;
+    background-color: rgb(5, 5, 100);
+  }
+}
+.footer_about_us {
+  background-color: navy;
+  text-align: center;
+}
+.footer_about_us hr {
+  color: burlywood;
+}
+.footer_about_us h5 {
+  color: burlywood;
+}
+.footer_about_us h2 {
+  color: burlywood;
+  font-size: 2em;
+  font-weight: 400;
+}
+.footer_about_us p {
+  color: white;
+}
+.footer_about_us a {
+  color: white;
+}
+.footer_about_us a:hover {
+  color: rgb(122, 122, 177);
+}
+.footer_about_us a:visited {
+  color: royalblue;
+}
+.footer_about_us #designer_name {
+  font-size: 150%;
+}
+
+.navi_2 {
+  display: flex;
+  width: 100%;
+}
+.navi_2 .login_navi_button_left {
+  flex: 1;
+  color: navy;
+  text-align: center;
+  align-content: center;
+  text-decoration: none;
+  font-weight: 600;
+  background-color: burlywood;
+  height: 40px;
+  border: none;
+  margin-top: auto;
+  margin-bottom: auto;
+  margin-right: 40%;
+  align-items: center;
+  cursor: pointer;
+  transition: background-color 0.25s;
+  transition: color 0.25;
+}
+.navi_2 .login_navi_button_left:hover {
+  color: burlywood;
+  background-color: navy;
+}
+.navi_2 .login_navi_button_left:active {
+  color: beige;
+  background-color: rgb(5, 5, 100);
+}
+.navi_2 .signup_navi_button_left {
+  flex: 1;
+  color: navy;
+  text-align: center;
+  align-content: center;
+  text-decoration: none;
+  font-weight: 600;
+  background-color: burlywood;
+  height: 40px;
+  border: none;
+  margin-top: auto;
+  margin-bottom: auto;
+  margin-right: 44.6%;
+  align-items: center;
+  cursor: pointer;
+  transition: background-color 0.25s;
+  transition: color 0.25;
+}
+.navi_2 .signup_navi_button_left:hover {
+  color: burlywood;
+  background-color: navy;
+}
+.navi_2 .signup_navi_button_left:active {
+  color: beige;
+  background-color: rgb(5, 5, 100);
+}
+.navi_2 p {
+  color: navy;
+  font-weight: 600;
+  font-size: larger;
+}
+.navi_2 .navi_button_right {
+  flex: 1;
+  color: navy;
+  text-align: center;
+  align-content: center;
+  text-decoration: none;
+  font-weight: 600;
+  background-color: burlywood;
+  border: none;
+  height: 40px;
+  margin-top: auto;
+  margin-bottom: auto;
+  margin-left: 1%;
+  cursor: pointer;
+  transition: background-color 0.25s;
+  transition: color 0.25;
+}
+.navi_2 .navi_button_right:hover {
+  color: burlywood;
+  background-color: navy;
+}
+.navi_2 .navi_button_right:active {
+  color: beige;
+  background-color: rgb(5, 5, 100);
+}
+
+@media (max-width: 700px) {
+  .navi_2 {
+    display: flex;
+    width: 100%;
+  }
+  .navi_2 .login_navi_button_left {
+    flex: 1;
+    color: navy;
+    text-align: center;
+    align-content: center;
+    text-decoration: none;
+    font-size: small;
+    font-weight: 600;
+    background-color: burlywood;
+    height: 40px;
+    border: none;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-right: 10%;
+    align-items: center;
+    cursor: pointer;
+    transition: background-color 0.25s;
+    transition: color 0.25;
+  }
+  .navi_2 .login_navi_button_left:hover {
+    color: burlywood;
+    background-color: navy;
+  }
+  .navi_2 .login_navi_button_left:active {
+    color: beige;
+    background-color: rgb(5, 5, 100);
+  }
+  .navi_2 .signup_navi_button_left {
+    flex: 1;
+    color: navy;
+    text-align: center;
+    align-content: center;
+    text-decoration: none;
+    font-size: small;
+    font-weight: 600;
+    background-color: burlywood;
+    height: 40px;
+    border: none;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-right: 23.5%;
+    align-items: center;
+    cursor: pointer;
+    transition: background-color 0.25s;
+    transition: color 0.25;
+  }
+  .navi_2 .signup_navi_button_left:hover {
+    color: burlywood;
+    background-color: navy;
+  }
+  .navi_2 .signup_navi_button_left:active {
+    color: beige;
+    background-color: rgb(5, 5, 100);
+  }
+  .navi_2 p {
+    color: navy;
+    font-weight: 600;
+    font-size: medium;
+  }
+  .navi_2 .navi_button_right {
+    flex: 1;
+    color: navy;
+    text-align: center;
+    align-content: center;
+    text-decoration: none;
+    font-size: small;
+    font-weight: 600;
+    background-color: burlywood;
+    border: none;
+    height: 40px;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: 1%;
+    cursor: pointer;
+    transition: background-color 0.25s;
+    transition: color 0.25;
+  }
+  .navi_2 .navi_button_right:hover {
+    color: burlywood;
+    background-color: navy;
+  }
+  .navi_2 .navi_button_right:active {
+    color: beige;
+    background-color: rgb(5, 5, 100);
+  }
+}
+#signup_h4 {
+  text-align: center;
+  color: navy;
+  font-weight: 600;
+}
+
+#signup_p_h4 {
+  text-align: center;
+  color: black;
+  font-weight: 400;
+}
+
+#carousel {
+  display: flex;
+  width: 100%;
+}
+#carousel img {
+  flex: 1;
+}
+
+.how_button {
+  color: navy;
+  text-align: center;
+  text-decoration: none;
+  font-size: x-large;
+  font-weight: 600;
+  background-color: burlywood;
+  margin-left: 1%;
+  border: none;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 8px;
+  padding-right: 8px;
+  cursor: pointer;
+  transition: background-color 0, 25s;
+  transition: color 0.25s;
+}
+
+.how_button:hover {
+  color: burlywood;
+  background-color: navy;
+}
+
+.how_button:active {
+  color: beige;
+  background-color: rgb(5, 5, 100);
+}
+
+.text_modal h3 {
+  color: navy;
+  font-weight: 600;
+}
+.text_modal p {
+  color: burlywood;
+}
+
+#captain_cards h4 {
+  color: navy;
+  font-weight: 600;
+}
+#captain_cards p {
+  color: black;
+  font-family: century, Times, serif;
+}
+@media (max-width: 700px) {
+  #captain_cards p {
+    color: black;
+    font-family: century, Times, serif;
+    font-size: small;
+  }
+}/*# sourceMappingURL=YCwebsite_Login.css.map */
