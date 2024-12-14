@@ -170,6 +170,7 @@
   color: burlywood;
   font-size: 1.5em;
   font-weight: 400;
+  cursor: pointer;
 }
 
 .location_list_italy {
@@ -177,6 +178,7 @@
   color: burlywood;
   font-size: 1.5em;
   font-weight: 400;
+  cursor: pointer;
 }
 
 .img_krk_punat {
@@ -285,6 +287,29 @@
 .yachts #charter_button:active {
   color: royalblue;
   background-color: rgb(214, 167, 105);
+}
+
+.theme_button {
+  display: flex;
+  justify-content: center;
+}
+.theme_button a {
+  color: burlywood;
+  text-align: center;
+  font-size: large;
+  font-weight: 500;
+  background-color: rgb(10, 29, 56);
+  width: 20%;
+  cursor: pointer;
+  transition: background-color 2.5s;
+}
+.theme_button a:hover {
+  color: burlywood;
+  background-color: navy;
+}
+.theme_button a:active {
+  color: beige;
+  background-color: rgb(5, 5, 100);
 }
 
 .aside_button_right {
