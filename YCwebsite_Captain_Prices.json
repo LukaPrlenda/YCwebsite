@@ -1,0 +1,17 @@
+{
+      "captain1":{
+        "name":"Pero Peric",
+        "per_hour":"200",
+        "per_week":"2000"
+    },
+    "captain2":{
+        "name":"Brzo Brzic",
+        "per_hour":"200",
+        "per_week":"2000"
+    },
+    "captain3":{
+        "name":"Donald McDuckr",
+        "per_hour":"200",
+        "per_week":"2000"
+     }
+}
