@@ -18,6 +18,15 @@ function add_description1(name,text,id1){
 }
 
 
+
+function show_modal(id1, id2, event){
+    event.preventDefault();
+    document.getElementById(id1).style.display="block";
+    document.getElementById(id2).addEventListener("click", function(){document.getElementById(id1).style.display="none"});
+}
+
+
+
 let current_theme="light";
 document.addEventListener("load", function(){if(current_theme==="dark"){theme_button();}});
 

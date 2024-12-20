@@ -49,12 +49,12 @@
                 <li id="li_rovinj" onclick="add_description1('Rovinj','~One of the most beautifull cityes in Istra~','li_rovinj')">Rovinj</li>
             </ul>
             </div>
-            <img class="img_krk_punat" src="images/krk_punat.jpg" alt="No internet connection">
+            <img id="punat_img" class="img_krk_punat" src="images/krk_punat.jpg" alt="No internet connection" onclick="show_modal('punat_modal', 'close_modal_punat', event)">
             <br>
         </article>
         <br><br>
         <article class="list_sicily">
-            <img class="img_sicily" src="images/sicily.jpg" alt="No internet connection">
+            <img id="sicily_img" class="img_sicily" src="images/sicily.jpg" alt="No internet connection" onclick="show_modal('sicily_modal', 'close_modal_sicily', event)">
             <div>
                 <h3 id="theme1,3" class="title3_italy">Italy</h3>
                 <ul class="location_list_italy">
@@ -66,6 +66,20 @@
             <br>
         </article>
         <br><br><br>
+        <div id="punat_modal" class="modal_punat">
+            <div class="modal_div_punat">
+                <img class="modal_punat_img" src="images/krk_punat.jpg" alt="No internet connection">
+            </div>
+            <br>
+            <a id="close_modal_punat" class="close_modal">Close</a>
+        </div>
+        <div id="sicily_modal" class="modal_punat">
+            <div class="modal_div_punat">
+                <img class="modal_punat_img" src="images/sicily.jpg" alt="No internet connection">
+            </div>
+            <br>
+            <a id="close_modal_sicily" class="close_modal">Close</a>
+        </div>
     </section>
     <hr class="section_line">
     <br>
