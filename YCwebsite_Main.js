@@ -18,6 +18,10 @@ function add_description1(name,text,id1){
 }
 
 
+let current_theme="light";
+document.addEventListener("load", function(){if(current_theme==="dark"){theme_button();}});
+
+
 function theme_button(){
     event.preventDefault();
     const css1=document.querySelector("*");
@@ -31,6 +35,8 @@ function theme_button(){
             t1.addEventListener("click",function(){light_theme_btn(t1,"burlywood","white");});
     
             css1.style.background="white";
+            colore_switch("navy");
+            current_theme="light";
         }
     
         else{
@@ -38,6 +44,8 @@ function theme_button(){
             t1.addEventListener("click",function(){light_theme_btn(t1,"burlywood",dark_bck_color);});
             
             css1.style.background=dark_bck_color;
+            colore_switch("lightblue");
+            current_theme="dark";
         }
     }
     else{
@@ -49,6 +57,7 @@ function theme_button(){
     
             css1.style.background="white";
             colore_switch("navy");
+            current_theme="light";
         }
     
         else{
@@ -59,6 +68,7 @@ function theme_button(){
             
             css1.style.background=dark_bck_color;
             colore_switch("lightblue");
+            current_theme="dark";
         }
     }
 }
@@ -76,6 +86,7 @@ const theme1_class=["title2_2",
 ]
 
 const theme2_id=["theme2.0","theme2.1","theme2.2","theme2.3","theme2.4","theme2.5","theme2.6",
+    "table1_hed","table2_hed","table2_bdy","captain_table",
     "charter_button",
     "about_us",
 ]
@@ -96,7 +107,7 @@ function colore_switch(color1){
 
     for(let i=0;i<theme2_id.length;i++){
         document.getElementById(theme2_id[i]).style.backgroundColor=color1;
-        if(theme2_id[i]!="about_us"){
+        if(theme2_id[i]!="about_us" && theme2_id[i]!="table1_hed" && theme2_id[i]!="table2_hed" && theme2_id[i]!="table2_bdy" && theme2_id[i]!="captain_table"){
             document.getElementById(theme2_id[i]).addEventListener("mouseover", function(){theme_btn_clicked_id(theme2_id[i],"burlywood")});
             document.getElementById(theme2_id[i]).addEventListener("click", function(){theme_btn_clicked_id(theme2_id[i],"rgb(214, 167, 105)")});
             document.getElementById(theme2_id[i]).addEventListener("mouseout", function(){theme_btn_clicked_id(theme2_id[i],color1)});
@@ -111,6 +122,9 @@ function colore_switch(color1){
             theme_i[j].addEventListener("mouseout", function(){theme_btn_clicked_class(theme_i[j],color1)});
         }
     }
+
+    document.getElementById("table2_bdy").style.backgroundColor="rgb(83, 107, 140)";
+    document.getElementById("captain_table").style.backgroundColor="rgb(83, 107, 140)";
 }
 
 function theme_btn_clicked_id(id,colore1){

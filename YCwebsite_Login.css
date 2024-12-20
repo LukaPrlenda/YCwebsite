@@ -585,14 +585,6 @@
   font-weight: 400;
 }
 
-#carousel {
-  display: flex;
-  width: 100%;
-}
-#carousel img {
-  flex: 1;
-}
-
 .how_button {
   color: navy;
   text-align: center;
@@ -621,26 +613,90 @@
   background-color: rgb(5, 5, 100);
 }
 
-.text_modal h3 {
+@media (min-width: 700px) {
+  .captain_cards #row1 {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    gap: 15%;
+  }
+}
+@media (max-width: 700px) {
+  .captain_cards #row1_mobile {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+  }
+}
+.captain_cards #row2 {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+.captain_cards h4 {
   color: navy;
   font-weight: 600;
 }
-.text_modal p {
-  color: burlywood;
-}
-
-#captain_cards h4 {
-  color: navy;
-  font-weight: 600;
-}
-#captain_cards p {
+.captain_cards p {
   color: black;
   font-family: century, Times, serif;
 }
+.captain_cards .captain_card {
+  background-color: whitesmoke;
+  padding: 4px;
+  border-radius: 2%;
+}
+.captain_cards .captain_card #capatin_img {
+  text-align: center;
+}
 @media (max-width: 700px) {
-  #captain_cards p {
+  .captain_cards p {
     color: black;
     font-family: century, Times, serif;
     font-size: small;
+  }
+}
+
+.table {
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+  border-collapse: collapse;
+}
+.table .table1_hed {
+  background-color: navy;
+  color: burlywood;
+  font-weight: 600;
+  font-size: x-large;
+}
+.table .table2_hed {
+  background-color: navy;
+  color: burlywood;
+  font-weight: 600;
+  font-size: x-large;
+}
+.table .table2_bdy {
+  background-color: whitesmoke;
+  color: burlywood;
+  font-size: x-large;
+}
+.table .table2_bdy .values {
+  text-align: center;
+}
+.table th {
+  padding: 1%;
+}
+.table td {
+  padding: 1%;
+}
+@media (max-width: 700px) {
+  .table .table1_hed {
+    font-size: medium;
+  }
+  .table .table2_hed {
+    font-size: medium;
+  }
+  .table .table2_bdy {
+    font-size: medium;
   }
 }/*# sourceMappingURL=YCwebsite_Login.css.map */

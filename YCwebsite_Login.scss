@@ -706,15 +706,6 @@ $text1: century, Times, serif;
 
 
 
-#carousel{
-    display: flex;
-    width: 100%;
-
-    img{
-        flex: 1;
-    }
-}
-
 .how_button{
     color: navy;
     text-align: center;
@@ -744,18 +735,29 @@ $text1: century, Times, serif;
     background-color: rgb(5, 5, 100);
 }
 
-.text_modal{
-    h3{
-        color: navy;
-        font-weight: 600;
-    }
 
-    p{
-        color: burlywood;
+.captain_cards{
+    @media(min-width: 700px){
+        #row1{
+            display: flex;
+            width: 100%;
+            justify-content: center;
+            gap: 15%;
+        }
     }
-}
+    @media(max-width: 700px){
+        #row1_mobile{
+            display: flex;
+            width: 100%;
+            justify-content: center;
+        }
+    }
+        #row2{
+            display: flex;
+            width: 100%;
+            justify-content: center;
+        }
 
-#captain_cards{
     h4{
         color: navy;
         font-weight: 600;
@@ -765,11 +767,76 @@ $text1: century, Times, serif;
         font-family: $text1;
     }
 
+    .captain_card{
+        background-color: whitesmoke;
+        padding: 4px;
+        border-radius: 2%;
+        
+        #capatin_img{
+
+            text-align: center;
+        }
+    }
+
     @media (max-width: 700px){
         p{
             color: black;
             font-family: $text1;
             font-size: small;
+        }
+    }
+}
+
+.table{
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+    border-collapse: collapse;
+
+    .table1_hed{
+        background-color: navy;
+        color: burlywood;
+        
+        font-weight: 600;
+        font-size: x-large;
+    }
+    .table2_hed{
+        background-color: navy;
+        color: burlywood;
+
+        font-weight: 600;
+        font-size: x-large;
+    }
+
+    .table2_bdy{
+        background-color: whitesmoke;
+        color: burlywood;
+
+        font-size: x-large;
+
+        .values{
+            text-align: center;
+        }
+    }
+
+    th{
+        padding: 1%;
+    }
+
+    td{
+        padding: 1%;
+    }
+
+    @media(max-width: 700px){
+        .table1_hed{
+            font-size: medium;
+        }
+        .table2_hed{
+            font-size: medium;
+        }
+    
+        .table2_bdy{
+            font-size: medium;
         }
     }
 }
