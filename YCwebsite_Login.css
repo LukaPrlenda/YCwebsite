@@ -782,6 +782,100 @@
   }
 }
 
+.services_acord {
+  text-decoration: none;
+}
+.services_acord .acord_div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+  width: 60%;
+}
+.services_acord .acord_div .more_services {
+  text-align: center;
+  width: 100%;
+  color: burlywood;
+  background-color: navy;
+  font-size: x-large;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  cursor: pointer;
+  transition: color 0.25s;
+}
+.services_acord .acord_div .more_services:hover {
+  color: navy;
+  background-color: burlywood;
+}
+.services_acord .acord_div .more_services:active {
+  color: royalblue;
+  background-color: rgb(214, 167, 105);
+}
+.services_acord .acord_div .our_yachts {
+  display: none;
+  text-align: center;
+  width: 100%;
+  color: burlywood;
+  background-color: navy;
+  font-size: x-large;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  cursor: pointer;
+  transition: color 0.25s;
+}
+.services_acord .acord_div .our_yachts:hover {
+  color: navy;
+  background-color: burlywood;
+}
+.services_acord .acord_div .our_yachts:active {
+  color: royalblue;
+  background-color: rgb(214, 167, 105);
+}
+.services_acord .acord_div .acord1_div {
+  display: none;
+  width: 100%;
+}
+.services_acord .acord_div .acord1_div .acord1 {
+  display: block;
+  color: navy;
+  background-color: burlywood;
+  width: 100%;
+  font-size: large;
+  text-decoration: none;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  transition: color 0.25s;
+}
+.services_acord .acord_div .acord1_div .acord1:hover {
+  color: burlywood;
+  background-color: royalblue;
+}
+.services_acord .acord_div .acord2_div {
+  display: none;
+  width: 100%;
+}
+.services_acord .acord_div .acord2_div .acord2 {
+  display: block;
+  color: navy;
+  background-color: burlywood;
+  width: 100%;
+  font-size: large;
+  text-decoration: none;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  transition: color 0.25s;
+}
+.services_acord .acord_div .acord2_div .acord2:hover {
+  color: burlywood;
+  background-color: royalblue;
+}
+@media (max-width: 700px) {
+  .services_acord .acord_div {
+    width: 80%;
+  }
+}
+
 .table {
   margin-left: auto;
   margin-right: auto;
