@@ -44,8 +44,9 @@ function theme_button(){
             t1.addEventListener("click",function(){light_theme_btn(t1,"burlywood","white");});
     
             css1.style.background="white";
+            localStorage.setItem("theme", "0");
             colore_switch("navy");
-            current_theme="light";
+            
         }
     
         else{
@@ -53,8 +54,9 @@ function theme_button(){
             t1.addEventListener("click",function(){light_theme_btn(t1,"burlywood",dark_bck_color);});
             
             css1.style.background=dark_bck_color;
+            localStorage.setItem("theme", "1");
             colore_switch("lightblue");
-            current_theme="dark";
+            
         }
     }
     else{
@@ -65,8 +67,9 @@ function theme_button(){
             t1.addEventListener("mouseout",function(){light_theme_btn(t1,"burlywood",dark_bck_color);})
     
             css1.style.background="white";
+            localStorage.setItem("theme", "0");
             colore_switch("navy");
-            current_theme="light";
+            
         }
     
         else{
@@ -76,8 +79,9 @@ function theme_button(){
             t1.addEventListener("mouseout",function(){light_theme_btn(t1,"burlywood","white");})
             
             css1.style.background=dark_bck_color;
+            localStorage.setItem("theme", "1");
             colore_switch("lightblue");
-            current_theme="dark";
+            
         }
     }
 }
@@ -87,7 +91,7 @@ function light_theme_btn(t1,color1,color2){
     t1.style.backgroundColor=color2;
 }
 
-const theme1_id=["theme1,0","theme1,1","theme1,2","theme1,3","theme1,4","theme1,5","theme1,6","theme1,7","theme1,8","theme1,9","theme1,10",
+const theme1_id=["theme1,0","theme1,1","signup_h4","theme1,2","theme1,3","theme1,4","theme1,5","theme1,6","theme1,7","theme1,8","theme1,9","theme1,10","theme1,11","theme1,12","theme1,13","theme1,14",
     "locations",
 ]
 const theme1_class=["title2_2",
@@ -96,6 +100,8 @@ const theme1_class=["title2_2",
 
 const theme2_id=["theme2.0","theme2.1","theme2.2","theme2.3","theme2.4","theme2.5","theme2.6",
     "table1_hed","table2_hed","table2_bdy","captain_table",
+    "more_services", "our_yachts",  "waether",
+    "feedback_table", "comments", "adding_com", "actions",
     "charter_button",
     "about_us",
 ]
@@ -116,7 +122,7 @@ function colore_switch(color1){
 
     for(let i=0;i<theme2_id.length;i++){
         document.getElementById(theme2_id[i]).style.backgroundColor=color1;
-        if(theme2_id[i]!="about_us" && theme2_id[i]!="table1_hed" && theme2_id[i]!="table2_hed" && theme2_id[i]!="table2_bdy" && theme2_id[i]!="captain_table"){
+        if(theme2_id[i]!="about_us" && theme2_id[i]!="table1_hed" && theme2_id[i]!="table2_hed" && theme2_id[i]!="table2_bdy" && theme2_id[i]!="captain_table" && theme2_id[i]!="comments" && theme2_id[i]!="adding_com" && theme2_id[i]!="actions"){
             document.getElementById(theme2_id[i]).addEventListener("mouseover", function(){theme_btn_clicked_id(theme2_id[i],"burlywood")});
             document.getElementById(theme2_id[i]).addEventListener("click", function(){theme_btn_clicked_id(theme2_id[i],"rgb(214, 167, 105)")});
             document.getElementById(theme2_id[i]).addEventListener("mouseout", function(){theme_btn_clicked_id(theme2_id[i],color1)});
@@ -132,8 +138,20 @@ function colore_switch(color1){
         }
     }
 
-    document.getElementById("table2_bdy").style.backgroundColor="rgb(83, 107, 140)";
-    document.getElementById("captain_table").style.backgroundColor="rgb(83, 107, 140)";
+    if(color1=="navy"){
+        document.getElementById("table2_bdy").style.backgroundColor="whitesmoke";
+        document.getElementById("captain_table").style.backgroundColor="whitesmoke";
+        document.getElementById("comments").style.backgroundColor="whitesmoke";
+        document.getElementById("adding_com").style.backgroundColor="whitesmoke";
+        document.getElementById("actions").style.backgroundColor="whitesmoke";
+    }
+    else{
+        document.getElementById("table2_bdy").style.backgroundColor="rgb(83, 107, 140)";
+        document.getElementById("captain_table").style.backgroundColor="rgb(83, 107, 140)";
+        document.getElementById("comments").style.backgroundColor="rgb(83, 107, 140)";
+        document.getElementById("adding_com").style.backgroundColor="rgb(83, 107, 140)";
+        document.getElementById("actions").style.backgroundColor="rgb(83, 107, 140)";
+    }
 }
 
 function theme_btn_clicked_id(id,colore1){
@@ -142,3 +160,14 @@ function theme_btn_clicked_id(id,colore1){
 function theme_btn_clicked_class(class1,colore1){
     class1.style.background=colore1;
 }
+
+
+function check_theme(){
+    let past_theme=localStorage.getItem("theme");
+    
+    if(past_theme=="1"){
+        theme_button();
+    }
+}
+
+window.addEventListener("load", function(){check_theme();});
