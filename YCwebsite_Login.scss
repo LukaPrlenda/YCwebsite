@@ -1141,3 +1141,42 @@ $text1: century, Times, serif;
         }
     }
 }
+
+
+.comment_input{
+    text-align: center;
+    color: burlywood;
+    border: none;
+    width: 90%;
+}
+
+.table3_comments{
+    border-bottom: 1px solid navy;
+}
+
+.add_delete{
+    text-align: center;
+    color: navy;
+    background-color: whitesmoke;
+
+    cursor: pointer;
+    transition: color 0.25s;
+}
+
+
+.feedback_btn{
+    text-align: center;
+    color: navy;
+    background-color: burlywood;
+
+    cursor: pointer;
+    transition: color 0.25s;
+}
+.feedback_btn:hover{
+    color: burlywood;
+    background-color: navy;
+}
+.feedback_btn:active{
+    color: royalblue;
+    background-color: rgb(214, 167, 105);
+}
