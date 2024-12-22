@@ -2,10 +2,12 @@ document.getElementById("form").addEventListener("submit", function(event){passw
 function password_repeat(event){
     let password=document.getElementById("password").value;
     let password_repeat=document.getElementById("passwordcheck").value;
-
+    event.preventDefault();
     if(password!=password_repeat){
-        event.preventDefault();
         window.alert("The passwords do not match!");
+    }
+    if(password===password_repeat){
+        form_submittion();
     }
 }
 
@@ -13,7 +15,6 @@ document.getElementById("password").addEventListener("input", function(){passwor
 function password_strength_check(){
     const text1=document.getElementById("password_strenght");
     let password=document.getElementById("password").value;
-    console.log("test");
 
     if(password.length < 5){
         text1.innerHTML="Not strong enough!";
@@ -41,3 +42,24 @@ function password_strength_check(){
     }
 }
 
+
+async function form_submittion() {
+    const form=document.getElementById("form");
+    const data=new FormData(form);
+    try{
+        const response=await fetch ("https://jsonplaceholder.typicode.com/posts", {
+            method: "POST",
+            body: data,
+        });
+        if(response.ok){
+            document.getElementById("notification_green").style.display="block";
+            console.log("Form successfully submitted!");
+            setTimeout(function(){document.getElementById("notification_green").style.display="none";}, 2500);
+        }
+    }
+    catch(error){
+        document.getElementById("notification_red").style.display="block";
+        console.log("Error while submitting form: ",error);
+        setTimeout(function(){document.getElementById("notification_red").style.display="none";}, 3000);
+    }
+}

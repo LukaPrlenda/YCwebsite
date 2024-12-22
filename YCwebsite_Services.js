@@ -93,13 +93,6 @@ function acordian2(){
 
 
 
-const w3=document.getElementById(w3);
-const w4=document.getElementById(w4);
-const w5=document.getElementById(w5);
-const w6=document.getElementById(w6);
-const w7=document.getElementById(w7);
-
-
 async function punat_t() {
     city(45.018848, 14.629300, "w1", "Punat");
     city(45.128319, 14.789270, "w2", "Novi Vinodolski");

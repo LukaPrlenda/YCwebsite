@@ -806,7 +806,53 @@ $text1: century, Times, serif;
     }
 }
 
+.notification_green{
+    display: none;
+    position: fixed;
+    top: 30px;
+    bottom: 800px;
+    left: 20%;
+    right: 20%;
+    z-index: 1;
+    border-radius: 15px;
 
+    background-color: rgba(25, 181, 78, 0.8);
+    border: 1.5px solid darkgreen;
+    p{
+        color: darkgreen;
+        padding-left: 10%;
+        font-weight: 600;
+    }
+}
+@media(max-width: 700px){
+    .notification_green{
+        bottom: 750px;
+    }
+}
+
+.notification_red{
+    display: none;
+    position: fixed;
+    top: 30px;
+    bottom: 800px;
+    left: 20%;
+    right: 20%;
+    z-index: 1;
+    border-radius: 15px;
+
+    background-color: rgba(237, 28, 36, 0.5);
+    border: 1.5px solid crimson;
+    p{
+        color: crimson;
+        padding-left: 10%;
+        font-weight: 600;
+    }
+}
+@media(max-width: 700px){
+    .notification_red{
+        bottom: 750px;
+    }
+}
 
 
 
