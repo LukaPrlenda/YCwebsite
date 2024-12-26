@@ -202,6 +202,7 @@ $text1: century, Times, serif;
     color: burlywood;
     font-size: 1.5em;
     font-weight: 400;
+    cursor: pointer;
 }
 
 .location_list_italy{
@@ -209,6 +210,7 @@ $text1: century, Times, serif;
     color: burlywood;
     font-size: 1.5em;
     font-weight: 400;
+    cursor: pointer;
 }
 
 .img_krk_punat{
@@ -216,12 +218,13 @@ $text1: century, Times, serif;
     margin-right: 12.5%;
     width: 45%;
     height: auto;
-
+    cursor: pointer;
 }
 
 .img_sicily{
     margin-right: auto;
     margin-left: 12.5%;
+    cursor: pointer;
 }
 
 .list_krk_punat{
@@ -240,6 +243,51 @@ $text1: century, Times, serif;
     .img_sicily{
         width: 0%;
         margin-left: auto;
+    }
+}
+
+.modal_punat{
+    display: none;
+    position: fixed;
+    top: 20px;
+    bottom: 20px;
+    left: 20px;
+    right: 20px;
+    z-index: 1;
+    
+    background-color: rgba(167, 167, 167, 0.8);
+    border-radius: 10px;
+    
+    .modal_div_punat{
+        display: flex;
+        justify-content: center;
+    }
+
+    .modal_punat_img{
+        margin-top: 1%;
+        width: 80%;
+        height: auto;
+    }
+
+    .close_modal{
+        color: navy;
+        background-color: burlywood;
+        position: absolute;
+        text-align: center;
+        width: 20%;
+        font-size: large;
+        right: 10%;
+        
+        cursor: pointer;
+        transition: color 0.25s;
+    }
+    .close_modal:hover{
+        color: burlywood;
+        background-color: navy;
+    }
+    .close_modal:active{
+        color: royalblue;
+        background-color: rgb(214, 167, 105);
     }
 }
 
@@ -335,6 +383,35 @@ $text1: century, Times, serif;
     #charter_button:active{
         color: royalblue;
         background-color: rgb(214, 167, 105);
+    }
+}
+
+.theme_button{
+    display: flex;
+    justify-content: center;
+
+    a{
+        color: burlywood;
+        text-align: center;
+        font-size: large;
+        font-weight: 500;
+        
+        background-color: rgb(10, 29, 56);
+        width: 20%;
+        cursor: pointer;
+        transition: background-color 2.5s;
+    }
+
+    a:hover{
+        color: burlywood;
+
+        background-color: navy;
+    }
+
+    a:active{
+        color: beige;
+
+        background-color: rgb(5, 5, 100);
     }
 }
 
@@ -663,27 +740,121 @@ $text1: century, Times, serif;
 #signup_h4{
     text-align: center;
     color: navy;
-    font-weight: 600;
+    font-weight: 800;
+    font-size: x-large;
 }
 #signup_p_h4{
     text-align: center;
-    color: black;
+    color: burlywood;
     font-weight: 400;
 }
 
 
+.signup_form{
+    
+
+    .signup_row{
+        display: flex;
+        width: 100%;
+        justify-content: center;
 
 
+        label{
+            color: navy;
+            font-size: large;
+            font-weight: 600;
+        }
 
+        .input{
+            width: 100%;
+            color: black;
+            font-size: medium;
 
-#carousel{
-    display: flex;
-    width: 100%;
+            background-color: whitesmoke;
+            border: none;
+            border-radius: 3px;
+        }
 
-    img{
-        flex: 1;
+        .invalid-feedback{
+            color: burlywood;
+        }
+
+        .password_strenght{
+            font-size: small;
+
+            background-color: whitesmoke;
+            border-radius: 10px;
+
+            #password_strenght{
+                border-radius: 10px;
+            }
+        }
+
+        .submit_btn{
+            color: whitesmoke;
+            font-size: large;
+            font-weight: 600;
+
+            background-color: royalblue;
+            border: none;
+            padding: 1.5%;
+            width: 100%;
+            border-radius: 5px;
+
+            cursor: pointer;
+        }
     }
 }
+
+.notification_green{
+    display: none;
+    position: fixed;
+    top: 30px;
+    bottom: 800px;
+    left: 20%;
+    right: 20%;
+    z-index: 1;
+    border-radius: 15px;
+
+    background-color: rgba(25, 181, 78, 0.8);
+    border: 1.5px solid darkgreen;
+    p{
+        color: darkgreen;
+        padding-left: 10%;
+        font-weight: 600;
+    }
+}
+@media(max-width: 700px){
+    .notification_green{
+        bottom: 750px;
+    }
+}
+
+.notification_red{
+    display: none;
+    position: fixed;
+    top: 30px;
+    bottom: 800px;
+    left: 20%;
+    right: 20%;
+    z-index: 1;
+    border-radius: 15px;
+
+    background-color: rgba(237, 28, 36, 0.5);
+    border: 1.5px solid crimson;
+    p{
+        color: crimson;
+        padding-left: 10%;
+        font-weight: 600;
+    }
+}
+@media(max-width: 700px){
+    .notification_red{
+        bottom: 750px;
+    }
+}
+
+
 
 .how_button{
     color: navy;
@@ -714,18 +885,73 @@ $text1: century, Times, serif;
     background-color: rgb(5, 5, 100);
 }
 
-.text_modal{
-    h3{
+.how_modal{
+    display: none;
+    position: fixed;
+    top: 2%;
+    bottom: 60%;
+    left: 20%;
+    right: 20%;
+    z-index: 1;
+    
+    background-color: rgba(167, 167, 167, 0.8);
+    border-radius: 10px;
+    p{
         color: navy;
+        font-size: x-large;
         font-weight: 600;
+        text-align: center;
     }
 
-    p{
+    a{
+        position: absolute;
+        right: 10px;
+
+        color: navy;
+        background-color: burlywood;
+        font-size: x-large;
+        cursor: pointer;
+        transition:color 0.25s;
+    }
+    a:hover{
         color: burlywood;
+        background-color: navy;
+    }
+    a:active{
+        color: royalblue;
+        background-color: rgb(214, 167, 105);
+    }
+}
+@media(max-width: 700px){
+    .how_modal{
+        left: 5%;
+        right: 5%;
     }
 }
 
-#captain_cards{
+
+.captain_cards{
+    @media(min-width: 700px){
+        #row1{
+            display: flex;
+            width: 100%;
+            justify-content: center;
+            gap: 15%;
+        }
+    }
+    @media(max-width: 700px){
+        #row1_mobile{
+            display: flex;
+            width: 100%;
+            justify-content: center;
+        }
+    }
+        #row2{
+            display: flex;
+            width: 100%;
+            justify-content: center;
+        }
+
     h4{
         color: navy;
         font-weight: 600;
@@ -735,6 +961,17 @@ $text1: century, Times, serif;
         font-family: $text1;
     }
 
+    .captain_card{
+        background-color: whitesmoke;
+        padding: 4px;
+        border-radius: 2%;
+        
+        #capatin_img{
+
+            text-align: center;
+        }
+    }
+
     @media (max-width: 700px){
         p{
             color: black;
@@ -742,4 +979,204 @@ $text1: century, Times, serif;
             font-size: small;
         }
     }
+}
+
+.services_acord{
+    text-decoration: none;
+
+    .acord_div{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-left: auto;
+        margin-right: auto;
+        width: 60%;
+        
+        .more_services{
+            text-align: center;
+            width: 100%;
+            color: burlywood;
+            background-color: navy;
+            font-size: x-large;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            
+            cursor: pointer;
+            transition: color 0.25s;
+        }
+        .more_services:hover{
+            color: navy;
+            background-color: burlywood;
+        }
+        .more_services:active{
+            color: royalblue;
+            background-color: rgb(214, 167, 105);
+        }
+
+   
+
+        .our_yachts{
+            display: none;
+            text-align: center;
+            width: 100%;
+            color: burlywood;
+            background-color: navy;
+            font-size: x-large;
+            padding-top: 5px;
+            padding-bottom: 5px;
+            
+            cursor: pointer;
+            transition: color 0.25s;
+        }
+        .our_yachts:hover{
+            color: navy;
+            background-color: burlywood;
+        }
+        .our_yachts:active{
+            color: royalblue;
+            background-color: rgb(214, 167, 105);
+        }
+
+        .acord1_div{
+            display: none;
+            width: 100%;
+
+            .acord1{
+                display: block;
+                color: navy;
+                background-color: burlywood;
+                width: 100%;
+                font-size: large;
+                text-decoration: none;
+                padding-top: 5px;
+                padding-bottom: 5px;
+                transition: color 0.25s;
+            }
+            .acord1:hover{
+                color: burlywood;
+                background-color: royalblue;
+            }
+        }
+
+        .acord2_div{
+            display: none;
+            width: 100%;
+
+            .acord2{
+                display: block;
+                color: navy;
+                background-color: burlywood;
+                width: 100%;
+                font-size: large;
+                text-decoration: none;
+                padding-top: 5px;
+                padding-bottom: 5px;
+                transition: color 0.25s;
+            }
+            .acord2:hover{
+                color: burlywood;
+                background-color: royalblue;
+            }
+        }
+    }
+
+    @media(max-width:700px){
+        .acord_div{
+            width: 80%;
+        }
+    }
+}
+
+
+.table{
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+    border-collapse: collapse;
+
+    .table1_hed{
+        background-color: navy;
+        color: burlywood;
+        
+        font-weight: 600;
+        font-size: x-large;
+    }
+    .table2_hed{
+        background-color: navy;
+        color: burlywood;
+
+        font-weight: 600;
+        font-size: x-large;
+    }
+
+    .table2_bdy{
+        background-color: whitesmoke;
+        color: burlywood;
+
+        font-size: x-large;
+
+        .values{
+            text-align: center;
+        }
+    }
+
+    th{
+        padding: 1%;
+    }
+
+    td{
+        padding: 1%;
+    }
+
+    @media(max-width: 700px){
+        .table1_hed{
+            font-size: medium;
+        }
+        .table2_hed{
+            font-size: medium;
+        }
+    
+        .table2_bdy{
+            font-size: medium;
+        }
+    }
+}
+
+
+.comment_input{
+    text-align: center;
+    color: burlywood;
+    border: none;
+    width: 90%;
+}
+
+.table3_comments{
+    border-bottom: 1px solid navy;
+}
+
+.add_delete{
+    text-align: center;
+    color: navy;
+    background-color: whitesmoke;
+
+    cursor: pointer;
+    transition: color 0.25s;
+}
+
+
+.feedback_btn{
+    text-align: center;
+    color: navy;
+    background-color: burlywood;
+
+    cursor: pointer;
+    transition: color 0.25s;
+}
+.feedback_btn:hover{
+    color: burlywood;
+    background-color: navy;
+}
+.feedback_btn:active{
+    color: royalblue;
+    background-color: rgb(214, 167, 105);
 }
