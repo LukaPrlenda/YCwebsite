@@ -13,9 +13,9 @@
     <header id="the_top">
         <section class="navi_index" >
             <nav class="navi_index_btns">
-                <a id="theme2.7" href="#page_Signup">Signup</a>
-                <a id="theme2.8" href="#page_Login">Login</a>
-                <a id="theme2.9" href="#page_Services">Services</a>
+                <a id="pg1" href="#page_Signup">Signup</a>
+                <a id="pg2" href="#page_Login">Login</a>
+                <a id="pg3" href="#page_Services">Services</a>
                 <a id="last_a" href="#page_Main">Home</a>
             </nav>
             <p>~Hello User Name~</p>
@@ -44,7 +44,7 @@
 
 
     <section class="theme_button">
-        <a id="theme_btn" onclick="theme_button()">Dark theme</a>
+        <a id="theme_btn" onclick="theme_button(); curent_page_navi(localStorage.getItem('current_page_id'))">Dark theme</a>
     </section>
     <br><br>
     <aside class="aside_button_right">

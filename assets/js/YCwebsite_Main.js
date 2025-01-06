@@ -98,8 +98,7 @@ const theme1_class=["title2_2",
     "section_line",
 ]
 
-const theme2_id=["theme2.0","theme2.1","theme2.2","theme2.3","theme2.4","theme2.5","theme2.6","theme2.7","theme2.8","theme2.9",
-    "last_a",
+const theme2_id=["theme2.0","theme2.1","theme2.2","theme2.3","theme2.4","theme2.5","theme2.6",
     "table1_hed","table2_hed","table2_bdy","captain_table",
     "more_services", "our_yachts",  "waether",
     "feedback_table", "comments", "adding_com", "actions",
