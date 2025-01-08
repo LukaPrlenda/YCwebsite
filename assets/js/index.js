@@ -1,5 +1,5 @@
 var app=$.spapp({
-    defaultView: "#page_Main",
+    defaultView: "#page_Login",
     templateDir: "../../views/"
 });
   
@@ -11,23 +11,24 @@ app.run();
 app.route({
     view: "page_Signup",
     onCreate: function(){console.log("it is created 2"); start_signup_js();},
-    onReady: function() {console.log("page is reday"); curent_page_navi("pg1");}
+    onReady: function() {console.log("page is reday 2"); curent_page_navi("pg1");}
 });
 
 app.route({
     view: "page_Login",
-    onReady: function() {console.log("page is reday"); curent_page_navi("pg2");}
+    onCreate: function(){start_login_js();},
+    onReady: function() {console.log("page is reday Login"); curent_page_navi("pg2");}
 })
 
 app.route({
     view: "page_Services",
     onCreate: function(){console.log("it is created 1"); start_services_js();},
-    onReady: function() {console.log("page is reday"); curent_page_navi("pg3");}
+    onReady: function() {console.log("page is reday 1"); curent_page_navi("pg3"); check_stsus();}
 });
 
 app.route({
     view: "page_Main",
-    onReady: function() {console.log("page is reday"); curent_page_navi("last_a");}
+    onReady: function() {console.log("page is reday Main"); curent_page_navi("last_a"); check_stsus();}
 })
 
 
@@ -66,4 +67,15 @@ function curent_page_navi(id){
     current.addEventListener("mouseout", function(){current.style.color="navy";});
     current.addEventListener("click", function(){current.style.color="navy";});
     current.addEventListener("mouseover", function(){current.style.color="navy";});
+}
+
+function check_stsus(){
+    const status=localStorage.getItem("login_status");
+    if(status=="1"){}
+    else{
+        window.location.href="#page_Login";
+        console.log("Error, not logged in!");
+        document.getElementById("login_status_red").style.display="block";
+        setTimeout(()=>{document.getElementById("login_status_red").style.display="none"}, 3000);
+    }
 }

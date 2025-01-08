@@ -66,5 +66,4 @@ function start_signup_js(){
             setTimeout(function(){document.getElementById("notification_red").style.display="none";}, 3000);
         }
     }
-
 }
