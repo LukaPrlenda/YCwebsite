@@ -50,7 +50,7 @@ function curent_page_navi(id){
         pages_id.addEventListener("mouseover", function(){pages_id.style.backgroundColor="burlywood";});
 
         pages_id.addEventListener("mouseout", function(){pages_id.style.color="burlywood";});
-        pages_id.addEventListener("click", function(){pages_id.style.colorr="royalblue";});
+        pages_id.addEventListener("click", function(){pages_id.style.color="royalblue";});
         pages_id.addEventListener("mouseover", function(){pages_id.style.color="navy";});
 
         if(past_theme=="1"){
@@ -71,11 +71,20 @@ function curent_page_navi(id){
 
 function check_stsus(){
     const status=localStorage.getItem("login_status");
-    if(status=="1"){}
+    if(status=="1"){
+        const cur_user=localStorage.getItem("username");
+        document.getElementById("hello_user").innerHTML="Hello "+cur_user;
+    }
     else{
         window.location.href="#page_Login";
         console.log("Error, not logged in!");
+        document.getElementById("hello_user").innerHTML="";
         document.getElementById("login_status_red").style.display="block";
         setTimeout(()=>{document.getElementById("login_status_red").style.display="none"}, 3000);
     }
+}
+
+const cur_user=localStorage.getItem("username");
+if(cur_user!=null){
+    document.getElementById("hello_user").innerHTML="~Hello "+cur_user+"~";
 }
