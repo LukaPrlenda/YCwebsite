@@ -20,9 +20,21 @@ function start_login_js(){
                     if(response.ok){
                         console.log("Login data successfully sent!");
                         console.log("User found");
+                        document.getElementById("login_green").style.display="block";
+                        setTimeout(()=>{document.getElementById("login_green").style.display="none";}, 2500);
                         localStorage.setItem("username", username_json);
                         localStorage.setItem("login_status", "1");
                         window.location.href="#page_Main";
+                        stat=1;
+                    }
+                }
+                else if(user_info_json[i].username==username_json && user_info_json[i].password!=password_json){
+                    if(response.ok){
+                        console.log("Login data successfully sent!");
+                        console.log("User found");
+                        console.log("Incorrect password!");
+                        document.getElementById("login_incorrect_red").style.display="block";
+                        setTimeout(()=>{document.getElementById("login_incorrect_red").style.display="none";}, 3000);
                         stat=1;
                     }
                 }
@@ -30,6 +42,8 @@ function start_login_js(){
             if(response.ok && stat==0){
                 console.log("Login data successfully sent!");
                 console.log("User not found");
+                document.getElementById("login_red").style.display="block";
+                setTimeout(()=>{document.getElementById("login_red").style.display="none";}, 3000);
             }
 
         }

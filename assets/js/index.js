@@ -73,7 +73,7 @@ function check_stsus(){
     const status=localStorage.getItem("login_status");
     if(status=="1"){
         const cur_user=localStorage.getItem("username");
-        document.getElementById("hello_user").innerHTML="Hello "+cur_user;
+        document.getElementById("hello_user").innerHTML="~Hello "+cur_user+"~";
     }
     else{
         window.location.href="#page_Login";
