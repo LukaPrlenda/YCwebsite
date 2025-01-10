@@ -24,6 +24,3 @@ function show_modal(id1, id2, event){
     document.getElementById(id1).style.display="block";
     document.getElementById(id2).addEventListener("click", function(){document.getElementById(id1).style.display="none"});
 }
-
-
-

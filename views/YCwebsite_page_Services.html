@@ -1,10 +1,10 @@
 <div class="container">
     <nav class="navi">
-            <a id="theme2.0" href="#contacts">Contacts</a>
-            <a id="theme2.1" href="YCwebsite_Main.html#locations">Locations</a>
-            <a id="theme2.2" href="YCwebsite_Main.html#yachts">Yachts</a>
+            <a id="theme2.0" onclick="scrole_to('contacts')">Contacts</a>
+            <a id="theme2.1" onclick="go_to('locations', '#page_Main')">Locations</a>
+            <a id="theme2.2" onclick="go_to('yachts', '#page_Main')">Yachts</a>
             <a id="theme2.3" href="#page_Main">Home page</a>
-            <a id="theme2.4" href="#about_us">About us</a>   
+            <a id="theme2.4" onclick="scrole_to('about_us')">About us</a>   
     </nav>
     <section>
         <img  class="img_marex440" src="../assets/images/riva88folgoro.jpg" alt="Riva 88' Folgoor">
@@ -13,7 +13,7 @@
     <hr class="section_line">
     <br>
     <section>
-        <h2 id="theme1,1" class="title2_2" id="our_captains">Our Captains</h2>
+        <h2 class="title2_2" id="our_captains">Our Captains</h2>
         <br><br>
         <a class="how_button" id="theme1,9" onclick="show_modal('how_modal', 'how_modal_close', event)">How to charter a yacht</a>
         <div id="how_modal" class="how_modal">
@@ -64,9 +64,9 @@
             <a id="more_services" class="more_services">More services ></a><br>
             <a id="our_yachts" class="our_yachts">Our yachts ></a><br>
             <div id="acord1_div" class="acord1_div">
-                <a class="acord1" href="YCwebsite_Main.html#riva_88">~ Riva 88' Folgoor</a>
-                <a class="acord1" href="YCwebsite_Main.html#princess_s72">~ Princess 74</a>
-                <a class="acord1" href="YCwebsite_Main.html#marex_440_gourmet_cruiser">~ Marex 440 Gourmet Cruiser</a>
+                <a class="acord1" onclick="go_to('riva_88', '#page_Main')">~ Riva 88' Folgoor</a>
+                <a class="acord1" onclick="go_to('princess_s72', '#page_Main')">~ Princess 74</a>
+                <a class="acord1" onclick="go_to('marex_440_gourmet_cruiser', '#page_Main')">~ Marex 440 Gourmet Cruiser</a>
             </div>
             <div id="acord2_div" class="acord2_div">
                 <a id="w1" class="acord2">~ Punat</a>

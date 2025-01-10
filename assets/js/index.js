@@ -11,24 +11,24 @@ app.run();
 app.route({
     view: "page_Signup",
     onCreate: function(){console.log("it is created 2"); start_signup_js();},
-    onReady: function() {console.log("page is reday 2"); curent_page_navi("pg1");}
+    onReady: function() {console.log("page is reday 2"); curent_page_navi("pg1"); url1(); go_to_id();}
 });
 
 app.route({
     view: "page_Login",
     onCreate: function(){start_login_js();},
-    onReady: function() {console.log("page is reday Login"); curent_page_navi("pg2");}
+    onReady: function() {console.log("page is reday Login"); curent_page_navi("pg2"); url2(); go_to_id();}
 })
 
 app.route({
     view: "page_Services",
     onCreate: function(){console.log("it is created 1"); start_services_js();},
-    onReady: function() {console.log("page is reday 1"); curent_page_navi("pg3"); check_stsus();}
+    onReady: function() {console.log("page is reday 1"); curent_page_navi("pg3"); check_stsus(); url3(); go_to_id();}
 });
 
 app.route({
     view: "page_Main",
-    onReady: function() {console.log("page is reday Main"); curent_page_navi("last_a"); check_stsus();}
+    onReady: function() {console.log("page is reday Main"); curent_page_navi("last_a"); check_stsus(); url4(); go_to_id();}
 })
 
 
@@ -87,4 +87,42 @@ function check_stsus(){
 const cur_user=localStorage.getItem("username");
 if(cur_user!=null){
     document.getElementById("hello_user").innerHTML="~Hello "+cur_user+"~";
+}
+
+
+function url1(){
+    window.history.pushState({page: "pg1"}, "Signup","/Signup");
+}
+function url2(){
+    window.history.pushState({page: "pg2"}, "Login", "/Login");
+}
+function url3(){
+    window.history.pushState({page: "pg3"}, "Services", "/Services");
+}
+function url4(){
+    window.history.pushState({page: "last_a"}, "Main", "/Main");
+}
+
+
+
+localStorage.setItem("scroll_to", "");
+function scrole_to(id){
+    document.getElementById(id).scrollIntoView();
+}
+function go_to(id, id2){
+    localStorage.setItem("scroll_to", id)
+    window.location.href=id2;
+    console.log("TEST1");
+}
+function go_to_id(){
+    const to_id=localStorage.getItem("scroll_to");
+    console.log("TEST1, "+to_id);
+    if(to_id!=""){
+        setTimeout(()=>{
+            console.log("TEST2, "+to_id);
+            document.getElementById(to_id).scrollIntoView();
+            localStorage.setItem("scroll_to", "");
+            console.log("TEST2");
+        }, 200);
+    }
 }
