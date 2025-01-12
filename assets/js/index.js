@@ -1,6 +1,6 @@
 var app=$.spapp({
     defaultView: "#page_Login",
-    templateDir: "../../views/"
+    templateDir: "./views/"
 });
   
 app.run();
