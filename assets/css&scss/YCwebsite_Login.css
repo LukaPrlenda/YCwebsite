@@ -1001,4 +1001,49 @@
 .feedback_btn:active {
   color: royalblue;
   background-color: rgb(214, 167, 105);
+}
+
+.navi_index {
+  display: flex;
+  height: 16px;
+}
+.navi_index .navi_index_btns {
+  display: flex;
+  width: 40%;
+}
+.navi_index .navi_index_btns a {
+  flex: 1;
+  margin-top: 0px;
+  text-align: center;
+  color: burlywood;
+  text-decoration: none;
+  font-size: small;
+  background-color: rgb(0, 0, 128);
+  cursor: pointer;
+  transition: 0.25s;
+}
+.navi_index .navi_index_btns #last_a {
+  border-bottom-right-radius: 20px;
+}
+.navi_index .navi_index_btns a:hover {
+  color: navy;
+  background-color: burlywood;
+}
+.navi_index .navi_index_btns a:active {
+  color: royalblue;
+  background-color: rgb(214, 167, 105);
+}
+.navi_index p {
+  flex-grow: 1;
+  text-align: end;
+  margin-top: 0px;
+  color: burlywood;
+  font-size: larger;
+  font-weight: 600;
+  text-decoration: underline;
+}
+@media (max-width: 700px) {
+  .navi_index p {
+    font-size: small;
+  }
 }/*# sourceMappingURL=YCwebsite_Login.css.map */

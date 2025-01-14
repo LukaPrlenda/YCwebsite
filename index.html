@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="./assets/css&scss/spapp.css" />
+    <link rel="stylesheet" href="./assets/css&scss/YCwebsite_Login.css">
+
+    <title>YachtCharterWebsite</title>
+</head>
+<body>
+    <header id="the_top">
+        <section class="navi_index" >
+            <nav class="navi_index_btns">
+                <a id="pg1" href="#page_Signup">Signup</a>
+                <a id="pg2" href="#page_Login">Login</a>
+                <a id="pg3" href="#page_Services">Services</a>
+                <a id="last_a" href="#page_Main">Home</a>
+            </nav>
+            <p id="hello_user"></p>
+        </section>
+        <h1 class="title" id="theme1,0">The Yacht Charter Website</h1>
+        <p class="undertitle">One place for all your charters</p>
+    </header>
+
+
+
+    <main id="spapp" class="pageContent" role="main">
+        <section id="page_Main" data-load="YCwebsite_page_Main.html">
+            <h1>page_Main</h1>
+        </section>
+        <section id="page_Services" data-load="YCwebsite_page_Services.html">
+            <h1>page_Services</h1>
+        </section>
+        <section id="page_Login" data-load="YCwebsite_page_Login.html">
+            <h1>page_Login</h1>
+        </section>
+        <section id="page_Signup" data-load="YCwebsite_page_Signup.html">
+            <h1>page_Signup</h1>
+        </section>
+    </main>
+
+
+
+    <section class="theme_button">
+        <a id="theme_btn" onclick="theme_button(); curent_page_navi(localStorage.getItem('current_page_id'))">Dark theme</a>
+    </section>
+    <br><br>
+    <aside class="aside_button_right">
+        <a id="theme1,10" onclick="scrole_to('the_top')">Back to the top</a>
+    </aside>
+    <br>
+    <footer class="footer_about_us" id="about_us">
+        <br><br><br><br><br>
+        <h5>Designer:</h5>
+        <p id="designer_name">Luka Prlenda</p>
+        <br>
+        <br>
+        <h5>University:</h5>
+        <p>International Burch University</p>
+        <br>
+        <h5>Course name:</h5>
+        <p>Foundations of Web Development</p>
+        <br>
+        <div id="contacts">
+            <hr>
+            <br>
+            <h2>Contacts</h2>
+            <br><br>
+            <h5>Professor email:</h5>
+            <a href="mailto:amela.vatres@stu.ibu.edu.ba" target="_blank">amela.vatres@stu.ibu.edu.ba</a><br>
+            <br>
+            <h5>Student email:</h5>
+            <p>luka.prlenda@stu.ibu.edu.ba</p>
+            <br><br><br><br><br><br><br><br><br><br>
+        </div>
+    </footer>
+   
+   
+
+    <p id="theme1,3"></p>
+   <p id="login_h4"></p>
+   
+    <p class="theme2"></p>
+
+    <p id="theme1,4"></p><p id="theme1,5"></p><p id="theme1,6"></p><p id="theme1,7"></p><p id="theme1,8"></p><p id="theme1,9"></p><p id="theme1,11"></p>
+    <p id="theme1,12"></p><p id="theme1,13"></p><p id="theme1,14"></p>
+   
+    <P class="title2_2"></P>
+    
+    
+    
+
+  
+
+    <div id="notification_green" class="notification_green">
+        <p>Success!</p>
+        <p>Your form was successfully submitted.</p>
+    </div>
+    <div id="login_green" class="notification_green">
+        <p>Success!</p>
+        <p>You are successfully logged in!</p>
+    </div>
+    <div id="login_status_red" class="notification_red">
+        <p>Error!</p>
+        <p>To access other pages you need to login or sign up.</p>
+    </div>
+
+    <p id="locations"></p>
+    <P class="title2_2"></P>
+    <p id="theme2.0"></p><p id="theme2.1"></p><p id="theme2.2"></p><p id="theme2.3"></p><p id="theme2.4"></p><p id="theme2.5"></p><p id="theme2.6"></p>
+    <p id="table1_hed"></p><p id="table2_hed"></p><p id="table2_bdy"></p><p id="captain_table"></p>
+    <p id="more_services"></p><p id="our_yachts"></p><p id="waether"></p>
+    <p id="feedback_table"></p><p id="comments"></p><p id="adding_com"></p><p id="actions"></p>
+    <p id="charter_button"></p>
+
+
+
+    <p id="theme1,1"></p><p id="theme1,15"></p><p id="theme1,16"></p><p id="theme1,17"></p><p id="theme1,18"></p>
+    <p id="theme1,19"></p><p id="theme1,2"></p><p id="theme1,20"></p><p id="theme1,21"></p><p id="theme1,22"></p>
+    <p id="theme1,23"></p><p id="theme1,24"></p><p id="theme1,25"></p><p id="theme1,26"></p><p id="theme1,27"></p>
+    <p id="signup_h4"></p>
+    <p id="theme2.7"></p><p id="theme2.8"></p><p id="theme2.9"></p><p id="theme2.10"></p><p id="theme2.11"></p>
+</body>
+
+<script src="./assets/js/jQuery-3.7.1.min.js"></script>
+<script src="./assets/js/jQuery.spapp.js"></script>
+<script src="./assets/js/index.js"></script>
+
+<script src="./assets/js/YCwebsite_Main.js"></script>
+<script src="./assets/js/YCwebsite_Services.js"></script>
+<script src="./assets/js/YCwebsite_SignupForm.js"></script>
+<script src="./assets/js/YCwebsite_LoginForm.js"></script>
+<script src="./assets/js/YCwebsite_Theme.js"></script>
+</html>

@@ -1,32 +1,3 @@
-let prev=""
-let prev_id=""
-function add_description1(name,text,id1){
-    event.preventDefault();
-    const t1=document.getElementById(id1);
-    const t2="<p>"+text+"</p>";
-    if(prev!=name && prev!=""){
-        document.getElementById(prev_id).innerHTML=prev;
-    }
-    if (t1.innerHTML==name+t2){
-        t1.innerHTML=name;
-    }
-    else{
-        t1.innerHTML=name+t2;
-    }
-    prev=name
-    prev_id=id1
-}
-
-
-
-function show_modal(id1, id2, event){
-    event.preventDefault();
-    document.getElementById(id1).style.display="block";
-    document.getElementById(id2).addEventListener("click", function(){document.getElementById(id1).style.display="none"});
-}
-
-
-
 let current_theme="light";
 document.addEventListener("load", function(){if(current_theme==="dark"){theme_button();}});
 
@@ -91,14 +62,16 @@ function light_theme_btn(t1,color1,color2){
     t1.style.backgroundColor=color2;
 }
 
-const theme1_id=["theme1,0","theme1,1","signup_h4","theme1,2","theme1,3","theme1,4","theme1,5","theme1,6","theme1,7","theme1,8","theme1,9","theme1,10","theme1,11","theme1,12","theme1,13","theme1,14",
+const theme1_id=["theme1,0","theme1,1","signup_h4","login_h4","theme1,2","theme1,3","theme1,4","theme1,5","theme1,6","theme1,7","theme1,8","theme1,9","theme1,10",
+    "theme1,11","theme1,12","theme1,13","theme1,14","theme1,15","theme1,16","theme1,17","theme1,18","theme1,19","theme1,20",
+    "theme1,21","theme1,22","theme1,23","theme1,24","theme1,25","theme1,26","theme1,27",
     "locations",
 ]
 const theme1_class=["title2_2",
     "section_line",
 ]
 
-const theme2_id=["theme2.0","theme2.1","theme2.2","theme2.3","theme2.4","theme2.5","theme2.6",
+const theme2_id=["theme2.0","theme2.1","theme2.2","theme2.3","theme2.4","theme2.5","theme2.6","theme2.7","theme2.8","theme2.9","theme2.10","theme2.11",
     "table1_hed","table2_hed","table2_bdy","captain_table",
     "more_services", "our_yachts",  "waether",
     "feedback_table", "comments", "adding_com", "actions",
@@ -171,3 +144,14 @@ function check_theme(){
 }
 
 window.addEventListener("load", function(){check_theme();});
+
+
+function update_theme_js(){
+    const cur_theme=localStorage.getItem("theme");
+    if(cur_theme=="1"){
+        colore_switch("lightblue");
+    }
+    else if(cur_theme=="0"){
+        colore_switch("navy");
+    }
+}

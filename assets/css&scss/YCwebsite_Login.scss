@@ -1180,3 +1180,61 @@ $text1: century, Times, serif;
     color: royalblue;
     background-color: rgb(214, 167, 105);
 }
+
+
+.navi_index{
+    display: flex;
+    height: 16px;
+
+    .navi_index_btns{
+        display: flex;
+        width: 40%;
+        
+        a{
+            flex: 1;
+
+            margin-top: 0px;
+            text-align: center;
+            color: burlywood;
+            text-decoration: none;
+            font-size: small;
+    
+            background-color: rgba(0, 0, 128, 1);
+            
+            cursor: pointer;
+            transition: 0.25s;
+        }
+
+        #last_a{
+            border-bottom-right-radius: 20px;
+        }
+
+        a:hover{
+            color: navy;
+            background-color: burlywood;
+        }
+
+        a:active{
+            color: royalblue;
+
+            background-color: rgb(214, 167, 105);
+        }
+    }
+
+    p{
+        flex-grow: 1;
+
+        text-align: end;
+        margin-top: 0px;
+        color: burlywood;
+        font-size: larger;
+        font-weight: 600;
+        text-decoration: underline;
+    }
+
+    @media(max-width: 700px){
+        p{
+            font-size: small;
+        }
+    }
+}

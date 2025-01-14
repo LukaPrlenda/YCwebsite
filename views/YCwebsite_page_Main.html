@@ -1,26 +1,13 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="YCwebsite_Login.css">
-    <script src="YCwebsite_Main.js"></script>
-    <title>YachtCharterWebsite</title>
-</head>
-<body>
-    <header id="the_top">
-        <h1 class="title" id="theme1,0">The Yacht Charter Website</h1>
-        <p class="undertitle">One place for all your charters</p>
-    </header>
+<div class="container">
     <nav class="navi">
-            <a id="theme2.0" href="#contacts">Contacts</a>
-            <a id="theme2.1" href="#locations">Locations</a>
-            <a id="theme2.2" href="#yachts">Yachts</a>
-            <a id="theme2.3" href="YCwebsite_Services.html">Services</a>
-            <a id="theme2.4" href="#about_us">About us</a>   
+            <a id="theme2.0" onclick="scrole_to('contacts')">Contacts</a>
+            <a id="theme2.1" onclick="scrole_to('locations')">Locations</a>
+            <a id="theme2.2" onclick="scrole_to('yachts')">Yachts</a>
+            <a id="theme2.3" href="#page_Services">Services</a>
+            <a id="theme2.4" onclick="scrole_to('about_us')">About us</a>   
     </nav>
     <section>
-        <img  class="img_marex440" src="images/marex440.jpg" alt="No internet connection">
+        <img  class="img_marex440" src="../assets/images/marex440.jpg" alt="No internet connection">
         <h3 class="yacht_h3">Marex 440</h3>
     </section>
     <hr class="section_line">
@@ -28,8 +15,8 @@
         <h2 id="theme1,1" class="title2">Do you have an account?</h2>
         <br>
         <section class="login_signup_buttons">
-            <a id="theme2.5" href="YCwebsite_Login.html">Log in</a>
-            <a id="theme2.6" href="YCwebsite_Signup.html">Sign up</a>
+            <a id="theme2.5" href="#page_Login">Log in</a>
+            <a id="theme2.6" href="#page_Signup">Sign up</a>
         </section>
         <br><br>
     </section>
@@ -38,7 +25,6 @@
     <section>
         <h2 class="title2_2" id="locations">Our locations</h2>
         <br>
-        <p id="signup_h4"></p>
         <article class="list_krk_punat">
             <div>
             <h3 id="theme1,2" class="title3">Croatia</h3>
@@ -50,12 +36,12 @@
                 <li id="li_rovinj" onclick="add_description1('Rovinj','~One of the most beautifull cityes in Istria~','li_rovinj')">Rovinj</li>
             </ul>
             </div>
-            <img id="punat_img" class="img_krk_punat" src="images/krk_punat.jpg" alt="No internet connection" onclick="show_modal('punat_modal', 'close_modal_punat', event)">
+            <img id="punat_img" class="img_krk_punat" src="../assets/images/krk_punat.jpg" alt="No internet connection" onclick="show_modal('punat_modal', 'close_modal_punat', event)">
             <br>
         </article>
         <br><br>
         <article class="list_sicily">
-            <img id="sicily_img" class="img_sicily" src="images/sicily.jpg" alt="No internet connection" onclick="show_modal('sicily_modal', 'close_modal_sicily', event)">
+            <img id="sicily_img" class="img_sicily" src="../assets/images/sicily.jpg" alt="No internet connection" onclick="show_modal('sicily_modal', 'close_modal_sicily', event)">
             <div>
                 <h3 id="theme1,3" class="title3_italy">Italy</h3>
                 <ul class="location_list_italy">
@@ -69,14 +55,14 @@
         <br><br><br>
         <div id="punat_modal" class="modal_punat">
             <div class="modal_div_punat">
-                <img class="modal_punat_img" src="images/krk_punat.jpg" alt="No internet connection">
+                <img class="modal_punat_img" src="../assets/images/krk_punat.jpg" alt="No internet connection">
             </div>
             <br>
             <a id="close_modal_punat" class="close_modal">Close</a>
         </div>
         <div id="sicily_modal" class="modal_punat">
             <div class="modal_div_punat">
-                <img class="modal_punat_img" src="images/sicily.jpg" alt="No internet connection">
+                <img class="modal_punat_img" src="../assets/images/sicily.jpg" alt="No internet connection">
             </div>
             <br>
             <a id="close_modal_sicily" class="close_modal">Close</a>
@@ -85,7 +71,7 @@
     <hr class="section_line">
     <br>
     <section class="yachts" id="yachts">
-        <h2 class="title2_2" id="locations">Our yachts</h2>
+        <h2 class="title2_2">Our yachts</h2>
         <br><br><br>
         <section id="riva_88" class="yt_section1_marex440">
             <iframe class="yt_1_marex440" src="https://www.youtube.com/embed/c_zS6WBufmY?controls=0&autoplay=1&mute=1&loop=1&playlist=c_zS6WBufmY"></iframe>
@@ -94,7 +80,7 @@
         <p id="theme1,4">Futuristically styled, perfect for your vacations</p>
         <a id="theme1,5" href="https://www.riva-yacht.com/en-us/Model/p/2-283-424-PUB-EXT/n/Riva-88%27-Folgore" target="_blank" title="Link to yacht website">More information about yacht here</a><br>
         <br><br><br>
-        <a class="theme2" id="charter_button" href="YCwebsite_Services.html#our_captains">Charter</a>
+        <a class="theme2" id="charter_button" onclick="go_to('our_captains', '#page_Services')">Charter</a>
         <br><br><br><br><br><br><br><br><br>
         <hr id="hr_2">
         <br><br><br>
@@ -105,7 +91,7 @@
         <p id="theme1,6">Spacious and high quality, perfect for entertainment</p>
         <a id="theme1,7" href="https://www.princessyachts.com/" target="_blank" title="Link to yacht website">More information about yacht here</a><br>
         <br><br><br>
-        <a class="theme2" id="charter_button" href="YCwebsite_Services.html#our_captains">Charter</a>
+        <a class="theme2" id="charter_button" onclick="go_to('our_captains', '#page_Services')">Charter</a>
         <br><br><br><br><br><br><br><br><br>
         <hr id="hr_2">
         <br><br><br>
@@ -116,46 +102,10 @@
         <p id="theme1,8">Perfect yacht form family excursions</p>
         <a id="theme1,9" href="https://marex.no/boats/440-gourmet-cruiser/" target="_blank" title="Link to yacht website">More information about yacht here</a><br>
         <br><br><br>
-        <a class="theme2" id="charter_button" href="YCwebsite_Services.html#our_captains">Charter</a>
+        <a class="theme2" id="charter_button" onclick="go_to('our_captains', '#page_Services')">Charter</a>
         <br><br><br><br><br><br><br><br><br>
         <hr id="hr_2">
         <br><br><br><br><br>
     </section>
     <br>
-    <section class="theme_button">
-        <a id="theme_btn" onclick="theme_button()">Dark theme</a>
-    </section>
-    <br><br>
-    <aside class="aside_button_right">
-        <a id="theme1,10" href="#the_top">Back to the top</a>
-    </aside>
-    <br>
-    <footer class="footer_about_us" id="about_us">
-        <br><br><br><br><br>
-        <h5>Designer:</h5>
-        <p id="designer_name">Luka Prlenda</p>
-        <br>
-        <br>
-        <h5>University:</h5>
-        <p>International Burch University</p>
-        <br>
-        <h5>Course name:</h5>
-        <p>Foundations of Web Development</p>
-        <br>
-        <div id="contacts">
-            <hr>
-            <br>
-            <h2>Contacts</h2>
-            <br><br>
-            <h5>Professor email:</h5>
-            <a href="mailto:amela.vatres@stu.ibu.edu.ba" target="_blank">amela.vatres@stu.ibu.edu.ba</a><br>
-            <br>
-            <h5>Student email:</h5>
-            <p>luka.prlenda@stu.ibu.edu.ba</p>
-            <br><br><br><br><br><br><br><br><br><br>
-        </div>
-    </footer>
-    <p id="table1_hed"></p><p id="table2_hed"></p><p id="table2_bdy"></p><p id="captain_table"></p><p id="more_services"></p><p id="our_yachts"></p><p id="waether"></p><p id="feedback_table"></p>
-    <P id="comments"></P><P id="adding_com"></P><p id="actions"></p><p id="theme1,11"></p><p id="theme1,12"></p><p id="theme1,13"></p><p id="theme1,14"></p>
-</body>
-</html>
+</div>
